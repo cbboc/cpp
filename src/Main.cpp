@@ -7,9 +7,6 @@
 
  #include <cstdlib>
 
-// g++ -std=gnu++11 -I../include Main.cpp
-// ./a.exe
-
 //////////////////////////////////////////////////////////////////////
 
 int main( int argc, char *argv[] ) {
