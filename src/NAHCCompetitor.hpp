@@ -3,13 +3,12 @@
 
 //////////////////////////////////////////////////////////////////////
 
-// #include "cbboc2015/CBBOC2015.hpp"
-#include "cbboc2015/CBBOC2015Util.hpp"
-#include "cbboc2015/Competitor.hpp"
-#include "cbboc2015/ObjectiveFn.hpp"
-#include "cbboc2015/ProblemClass.hpp"
-#include "cbboc2015/TrainingCategory.hpp"
-#include "cbboc2015/RNG.hpp"
+#include "cbboc/CBBOCUtil.hpp"
+#include "cbboc/Competitor.hpp"
+#include "cbboc/ObjectiveFn.hpp"
+#include "cbboc/ProblemClass.hpp"
+#include "cbboc/TrainingCategory.hpp"
+#include "cbboc/RNG.hpp"
 
 #include <algorithm>
 #include <random>

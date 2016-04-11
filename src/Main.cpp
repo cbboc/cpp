@@ -3,9 +3,12 @@
 #include "RandomCompetitor.hpp"
 #include "SAHHCompetitor.hpp"
 
- #include "cbboc2015/CBBOC2015.hpp"
+ #include "cbboc/CBBOC.hpp"
 
  #include <cstdlib>
+
+// g++ -std=gnu++11 -I../include Main.cpp
+// ./a.exe
 
 //////////////////////////////////////////////////////////////////////
 
@@ -13,9 +16,9 @@ int main( int argc, char *argv[] ) {
 
 	try {
 		// RandomCompetitor competitor;
-		// NAHCCompetitor competitor;
-		SAHHCompetitor competitor( TrainingCategory::SHORT );
-		CBBOC2015::run( competitor );
+		NAHCCompetitor competitor;
+		// SAHHCompetitor competitor( TrainingCategory::SHORT );
+		CBBOC::run( competitor );
 	}
 	catch( std::exception& ex ) {
 		std::cerr << "caught std exception in main, what=" << ex.what() << std::endl;

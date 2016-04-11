@@ -73,7 +73,8 @@ public:
     const char* what() const JSONCONS_NOEXCEPT
     {
         // c99_snprintf(const_cast<char*>(message_),255, format_.c_str(),arg1_.c_str());
-        std::snprintf(const_cast<char*>(message_),255, format_.c_str(),arg1_.c_str());
+        // std::snprintf(const_cast<char*>(message_),255, format_.c_str(),arg1_.c_str());
+        snprintf(const_cast<char*>(message_),255, format_.c_str(),arg1_.c_str());
         return message_;
     }
 
