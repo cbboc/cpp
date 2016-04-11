@@ -1,4 +1,3 @@
-
 #ifndef CBBOC_CBBOC_HPP
 #define CBBOC_CBBOC_HPP
 
@@ -89,14 +88,14 @@ public:
 		std::string outputPath = problemFolder + "/results/";
 		outputPath += "CBBOCresults-" + className + "-" + problemClassName + "-" + timestamp + ".json";
 		// std::ofstream out( outputPath );
-		out << results.toJSonString() << std::endl;
+		// out << results.toJSonString() << std::endl;
 
 		///////////////////////////
 
 		std::cout << results.toJSonString() << std::endl;
 		
-		ResultStats stats = resultStats( results.getTestingResults() ); 
-		stats.output( std::cout );
+		// ResultStats stats = resultStats( results.getTestingResults() ); 
+		// stats.output( std::cout );
 	}
 
 private:
@@ -293,12 +292,7 @@ private:
 		: bestValueMean_(bestValueMean ), 
 		  bestValueSD_(bestValueSD),
 		  remainingEvaluationsWhenBestReachedMean_(remainingEvaluationsWhenBestReachedMean), 
-		  remainingEvaluationsWhenBestReachedSD_(remainingEvaluationsWhenBestReachedSD) {
-//			this->bestValueMean = bestValueMean;
-//			this->bestValueSD = bestValueSD;
-//			this->remainingEvaluationsWhenBestReachedMean = remainingEvaluationsWhenBestReachedMean;
-//			this->remainingEvaluationsWhenBestReachedSD = remainingEvaluationsWhenBestReachedSD;
-		}
+		  remainingEvaluationsWhenBestReachedSD_(remainingEvaluationsWhenBestReachedSD) {}
 			
 		void output(std::ostream& os) const {
 			os << "bestValueMean: " << bestValueMean_ << '\n';
