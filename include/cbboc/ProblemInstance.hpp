@@ -100,7 +100,7 @@ public:
 			throw std::invalid_argument( "Bad argument to ProblemInstance.value" ); // "candidate of length " + getNumGenes() + " expected, found " + candidate.length );
 		
 		double total = 0.0;
-		for( size_t i=0; i<getNumGenes(); ++i ) {
+		for( size_t i=0; i<M; ++i ) {
 
 			const std::vector< int >& varIndices = data[ i ].first;
 			int fnTableIndex = 0;
