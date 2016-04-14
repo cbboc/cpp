@@ -242,7 +242,8 @@ private:
 			result["competitorLanguage"] = competitorLanguage;
 			result["problemClassName"] = problemClassName;
 			std::ostringstream ostc;
-			ostc << trainingCategory;
+			// ostc << trainingCategory;
+			ostc << numericCode( trainingCategory );
 			const std::string trainingCategoryStr( ostc.str() );
 			result["trainingCategory"] = trainingCategoryStr;
 			result["datetime"] = datetime;
