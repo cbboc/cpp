@@ -87,8 +87,8 @@ public:
 
 		std::string outputPath = problemFolder + "/results/";
 		outputPath += "CBBOCresults-" + className + "-" + problemClassName + "-" + timestamp + ".json";
-		// std::ofstream out( outputPath );
-		// out << results.toJSonString() << std::endl;
+		std::ofstream out( outputPath );
+		out << results.toJSonString() << std::endl;
 
 		///////////////////////////
 

@@ -13,8 +13,8 @@ int main( int argc, char *argv[] ) {
 
 	try {
 		// RandomCompetitor competitor;
-		NAHCCompetitor competitor;
-		// SAHHCompetitor competitor( TrainingCategory::SHORT );
+		// NAHCCompetitor competitor;
+		SAHHCompetitor competitor( TrainingCategory::SHORT );
 		CBBOC::run( competitor );
 	}
 	catch( std::exception& ex ) {
