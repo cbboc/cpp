@@ -31,6 +31,15 @@ inline long getMultiplier( TrainingCategory c ) {
 	}
 }
 
+inline int numericCode(TrainingCategory c ) {
+	switch( c ) {
+		case NONE : return 0;
+		case SHORT : return 1;
+		case LONG : return 2;
+		default : return s << "<<invalid TrainingCategory value>>";
+	}
+}
+
 inline std::ostream& operator <<( std::ostream& s, TrainingCategory c ) {
 	switch( c ) {
 		case NONE : return s << "NONE";
