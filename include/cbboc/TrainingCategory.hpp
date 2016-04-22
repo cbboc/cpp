@@ -36,7 +36,7 @@ inline int numericCode(TrainingCategory c ) {
 		case NONE : return 0;
 		case SHORT : return 1;
 		case LONG : return 2;
-		default : return s << "<<invalid TrainingCategory value>>";
+		default : throw std::invalid_argument( "Bad TrainingCategory value" );
 	}
 }
 
