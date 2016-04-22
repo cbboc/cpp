@@ -22,7 +22,7 @@
 
 class CBBOC {
 
-	static const long BASE_TIME_PER_INSTANCE_IN_MILLIS = 250 * 1000L;
+	static const long BASE_TIME_PER_INSTANCE_IN_MILLIS = 60 * 1000L;
 
 	friend class ObjectiveFn;
 
